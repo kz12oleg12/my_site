@@ -85,7 +85,7 @@
 			$('.jolk').removeClass('active');
 			$('body').removeClass('stop');
 		}); 
-			sadasd
+		
 	</script>
 
 </body>

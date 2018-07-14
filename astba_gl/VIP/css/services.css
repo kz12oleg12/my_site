@@ -1,0 +1,110 @@
+#services {
+  position: relative;
+  top: -80px;
+}
+
+#services .gray-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #f0f1f4;
+  width: 50%;
+  height: 93.4%;
+}
+
+#services .services__main .services-item {
+  position: relative;
+  color: #fff;
+}
+
+#services .services__main .services-item .services-item-wrap {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+}
+
+#services .services__main .services-item h2 {
+  font-size: 26px;
+  line-height: 1;
+  position: relative;
+}
+
+#services .services__main .services-item h2:before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: red;
+  top: 3px;
+  left: -10px;
+}
+
+#services .services__main .services-item p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#services .services__main .services-item-1 {
+  background: url(../img/services/1.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-2 {
+  background: url(../img/services/2.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-3 {
+  background: url(../img/services/3.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-4 {
+  background: url(../img/services/4.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-5 {
+  background: url(../img/services/5.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-6 {
+  background: url(../img/services/6.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-7 {
+  background: url(../img/services/7.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-8 {
+  background: url(../img/services/8.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-9 {
+  background: url(../img/services/9.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-10 {
+  background: url(../img/services/10.jpg) no-repeat center center/cover;
+}
+
+#services .services__main .services-item-1, #services .services__main .services-item-2, #services .services__main .services-item-4, #services .services__main .services-item-5 {
+  width: 35%;
+  float: left;
+  height: 300px;
+}
+
+#services .services__main .services-item-3 {
+  float: right;
+  width: 30%;
+  height: 600px;
+}
+
+#services .services__main .services-item-6 {
+  float: left;
+  width: 30%;
+  height: 600px;
+}
+
+#services .services__main .services-item-7, #services .services__main .services-item-8, #services .services__main .services-item-9, #services .services__main .services-item-10 {
+  float: right;
+  width: 35%;
+  height: 300px;
+}

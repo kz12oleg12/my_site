@@ -1,0 +1,82 @@
+#help {
+  position: relative;
+  top: -80px;
+  padding: 65px 0;
+  text-align: center;
+}
+
+#help .section__title {
+  font-size: 20px;
+}
+
+#help form {
+  margin-top: 50px;
+  display: inline-block;
+}
+
+#help form span {
+  margin-right: 10px;
+  position: relative;
+}
+
+#help form span i {
+  position: absolute;
+  color: #EE1A30;
+  top: -2px;
+  left: 10px;
+}
+
+#help form input {
+  border: none;
+  padding: 15px 25px;
+  padding-left: 35px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  outline: none;
+}
+
+#help form input::-webkit-input-placeholder {
+  color: #08254d;
+}
+
+#help form input::-moz-placeholder {
+  color: #08254d;
+}
+
+#help form input:-ms-input-placeholder {
+  color: #08254d;
+}
+
+#help form input::-ms-input-placeholder {
+  color: #08254d;
+}
+
+#help form input::placeholder {
+  color: #08254d;
+}
+
+#help form input[type="phone"] {
+  padding-left: 37px;
+}
+
+#help form input:last-child {
+  margin-right: 0;
+}
+
+#help form input[type="text"], #help form input[type="phone"] {
+  background: #DCE3ED;
+}
+
+#help form input[type="submit"] {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#help form input.button {
+  margin: 0;
+}
+
+#help form input.button:hover {
+  color: #fff;
+  background: #BA0000;
+}

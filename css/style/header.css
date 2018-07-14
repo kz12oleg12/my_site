@@ -1,0 +1,337 @@
+/* TOP */
+
+@font-face {
+    font-family: Clock;
+    /* Имя шрифта */
+    src: url('/font/Clock.ttf');
+    /* Путь к файлу со шрифтом */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding: 5px 0;
+    transition: 1s;
+    background-color: transparent;
+    height: 67px;
+    display: flex;
+    align-items: center;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hd {
+    padding: 15px;
+}
+
+.language {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.language ul {
+    display: flex;
+    list-style: none;
+}
+
+.language ul li {
+    padding: 15px;
+    font-size: 1em;
+    transition: 0.2s;
+}
+
+.language ul li:hover {
+    transform: scale(1.1)
+}
+
+.language ul li a {
+    color: white;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.language ul li a.active {
+    border: 2px solid white;
+}
+
+.language ul li a:hover {
+    border: 2px solid red;
+    transform: scale(1.2)
+}
+
+.telephone {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+    padding-right: 15px;
+}
+
+.telephone img {
+    width: 35px;
+    margin: 0 15px;
+}
+
+.d33:before {
+    content: "";
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ee1a30;
+}
+
+/* clock */
+
+.cl-city {
+    height: 0;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    color: white;
+    left: -20px;
+    right: 0;
+    transition: ease, 0.5s;
+}
+
+.cl-city h2 {
+    font-family: 'Clock', arial;
+    padding: 10px;
+    background: #ee1a30;
+    border-radius: 50px;
+    margin-top: 9px;
+    font-size: 0.8em;
+}
+
+.cl-it {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.cl-it:hover .cl-city {
+    overflow: inherit;
+}
+
+.cl-it:hover img:hover {
+    opacity: 1;
+}
+
+.cl-it.active img {
+    opacity: 1;
+}
+
+.cl-it img {
+    opacity: 0.3;
+    width: 75%;
+}
+
+.cl-it:hover img {
+    transform: scale(1.2)
+}
+
+.cl-it.active img {
+    transform: scale(1.2)
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.btn-phone:hover span {
+    text-decoration: underline;
+    text-decoration-color: #ee1a30;
+}
+
+/* TOP ACTIVE */
+
+header.active {
+    background: white;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #0003;
+}
+
+/* language */
+
+header.active .language ul li a {
+    color: #08254d;
+}
+
+header.active .language ul li a.active {
+    border: 2px solid red;
+}
+
+header.active .language ul li a:hover {
+    border: 2px solid red;
+    transform: scale(1.2);
+}
+
+.language ul li {
+    padding: 0;
+    padding-right: 15px;
+}
+
+/* tlephone */
+
+header.active .telephone {
+    color: #08254d;
+}
+
+header.active .telephone img {
+    margin: 0;
+    margin-right: 15px;
+}
+
+/* clok */
+
+header.active .cl-it {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* menu */
+
+.nav-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.active .nav-menu {
+    color: red;
+}
+
+.brand::before {
+    content: url('/img/logo.svg');
+    width: 100%;
+}
+
+header.active .brand::before {
+    content: url('/img/logoW.png');
+    width: 100%;
+}
+
+.telephone::before {
+    content: url('/img/icon/phone.svg');
+    width: 30px;
+    margin: 5px 15px 0;
+}
+
+header.active .telephone::before {
+    content: url('/img/icon/phoneW.svg');
+}
+
+.cl-it .disable {
+    display: none;
+}
+
+.cl-it .active {
+    display: block;
+}
+
+header.active .cl-it .disable {
+    display: block;
+}
+
+header.active .cl-it .active {
+    display: none;
+}
+
+/* TOP_MENU */
+
+.top__menu {
+    width: 40px;
+    padding-bottom: 10px ;
+}
+
+.top__menu .line {
+    cursor: pointer;
+    position: relative;
+}
+
+.top__menu .line::before, .top__menu .line::after {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    content: '';
+    position: absolute;
+    background: #08254D;
+    height: 4px;
+    width: 40px;
+    display: inline-block;
+    left: 0;
+}
+
+.top__menu .line::before {
+    top: 0px;
+}
+
+.top__menu .line:after {
+    bottom: -7px;
+}
+
+.top__menu .line .min {
+    width: 5px;
+    display: inline-block;
+    height: 4px;
+    background: red;
+}
+
+.top__menu .line .max {
+    width: 30px;
+    display: inline-block;
+    height: 4px;
+    background: #08254D;
+}
+
+.top__menu .line.active {
+    margin-right: 40px;
+}
+
+.top__menu .line.active .min, .top__menu .line.active .max {
+    display: none;
+}
+
+.top__menu .line.active::before {
+    top: 13px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.top__menu .line.active::after {
+    top: 13px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width:992px) {
+    header.active {
+        padding: 0;
+    }
+    header .telephone {
+        font-size: 1em;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,184 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  header .top__clocks ul li:nth-child(n+2) {
+    display: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  #services .gray-block {
+    height: 95.6%;
+  }
+  #services .services__main .services-item-1, #services .services__main .services-item-2, #services .services__main .services-item-3, #services .services__main .services-item-4, #services .services__main .services-item-5, #services .services__main .services-item-6, #services .services__main .services-item-7, #services .services__main .services-item-8, #services .services__main .services-item-9, #services .services__main .services-item-10 {
+    width: 50%;
+  }
+  #help form input[type="text"], #help form input[type="phone"] {
+    width: 30%;
+  }
+  #tools .tools-item {
+    height: 220px;
+  }
+  #tools .tools-item h3 {
+    font-size: 20px;
+  }
+  #tools .tools-item h3 {
+    font-size: 21px;
+  }
+  #list .list__menu {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #list .list__menu:after {
+    display: none;
+  }
+  #footer__menu {
+    text-align: center;
+  }
+  #footer__menu .col-lg-4:before {
+    display: none;
+  }
+  #footer__menu .footer__title:after {
+    display: none;
+  }
+  #footer__menu .dop {
+    margin-top: 50px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  header .top__langs ul li a.m-phone {
+    top: 3px;
+  }
+  header .top__langs ul li a.m-phone img {
+    width: 33.5px;
+  }
+  #home .white-block {
+    display: none;
+  }
+  #home .home__main h1 {
+    margin-bottom: 20px;
+  }
+  #home .home__main .divide {
+    width: 45px;
+  }
+  #services {
+    top: 0;
+  }
+  #services .gray-block {
+    display: none;
+  }
+  #services .services__main .services-item-1, #services .services__main .services-item-2, #services .services__main .services-item-3, #services .services__main .services-item-4, #services .services__main .services-item-5, #services .services__main .services-item-6, #services .services__main .services-item-7, #services .services__main .services-item-8, #services .services__main .services-item-9, #services .services__main .services-item-10 {
+    width: 100%;
+    height: 300px;
+  }
+  #help {
+    top: 0;
+  }
+  #help form input[type="text"], #help form input[type="phone"] {
+    width: 45%;
+  }
+  #help form input[type="submit"] {
+    margin-top: 15px;
+  }
+  #tools {
+    top: 0;
+  }
+  #tools .tools-item {
+    height: 260px;
+  }
+  #partners {
+    top: 0;
+  }
+  #list {
+    top: 0;
+  }
+  #footer__menu {
+    top: 0;
+  }
+  #footer__menu .dop {
+    margin-bottom: 20px;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  header .top__langs ul li a {
+    font-size: 12px;
+    padding: 4px;
+  }
+  header .top__langs ul li a.m-phone {
+    top: 1px;
+  }
+  header .top__langs ul li a.m-phone img {
+    margin-left: 10px;
+    width: 25px;
+  }
+  .mm-navbars_top {
+    display: block;
+  }
+  .mm-menu_navbar_top-1 .mm-panels {
+    top: 40px;
+  }
+  #home .home__main h1 {
+    font-size: 37px;
+  }
+  #home .home__main p {
+    font-size: 15px;
+  }
+  #services .services__main .services-item h2 {
+    font-size: 22px;
+    padding-right: 20px;
+  }
+  #services .services__main .services-item p {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  #services .services__main .services-item .button {
+    padding: 7px 18px;
+  }
+  #partners h2 {
+    font-size: 27px;
+  }
+  #help .section__title {
+    font-size: 18px;
+  }
+  #help form span.phone i {
+    top: 5px;
+  }
+  #help form input[type="phone"] {
+    margin-top: 15px;
+  }
+  #help form input[type="text"], #help form input[type="phone"], #help form input[type="submit"] {
+    width: 100%;
+  }
+  #tools p {
+    font-size: 12px;
+  }
+  #tools .tools-item {
+    height: 200px;
+  }
+  #tools .tools-item h3 {
+    font-size: 16px;
+  }
+  #tools .tools-item:hover h3 {
+    font-size: 17px;
+  }
+  #list .list__menu li {
+    margin-bottom: 0;
+  }
+  #list .list__menu li a {
+    font-size: 11px;
+  }
+  #footer__menu .footer__title {
+    font-size: 18px;
+  }
+  #footer__menu .footer__menu li a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px){
+	.asti{
+		margin-top: 5px;
+	}
+	.head{
+		margin: 30px auto;
+	}
+}
+@media screen and (max-width: 680px){
+	.head{
+		margin: 30px auto;
+	}
+}

@@ -1,0 +1,6 @@
+#menu:active #mobile_menu{
+	display: block;
+}
+#menu #mobile_menu:hover{
+	display: block;
+}

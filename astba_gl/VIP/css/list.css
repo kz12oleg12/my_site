@@ -1,0 +1,35 @@
+#list {
+  position: relative;
+  background: #E9EBEF;
+  padding: 15px;
+  color: #08254d;
+}
+
+#list .list__menu {
+  position: relative;
+}
+
+#list .list__menu:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: #EE1A30;
+}
+
+#list .list__menu li {
+  margin-bottom: 4px;
+}
+
+#list .list__menu li a {
+  font-size: 13px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#list .list__menu li a:hover {
+  color: #EE1A30;
+}

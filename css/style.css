@@ -1,0 +1,102 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body.stop {
+    overflow: hidden;
+}
+
+@media (max-width:992px) {
+    body {
+        overflow: inherit;
+    }
+}
+
+.bl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bl-it {
+    position: relative;
+}
+
+.bl-cont {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.h-max {
+    height: 100%;
+    /* padding: 30px; */
+}
+
+.fl-h {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bl-name h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+
+a {
+    position: initial;
+}
+
+@media(max-width:992px) {
+    .bl {
+        overflow: auto;
+        position: relative;
+    }
+    .main {
+        position: relative;
+        display: block;
+        padding: 15px;
+    }
+    .fl-h {
+        display: block;
+    }
+    .bl-cont {
+        position: relative;
+    }
+}

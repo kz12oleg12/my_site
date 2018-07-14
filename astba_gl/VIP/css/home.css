@@ -1,0 +1,43 @@
+#home {
+  height: 100vh;
+  background: url("../img/home.jpg") fixed center center/cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .white-block {
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: #fff;
+}
+
+#home .home__main {
+  color: #fff;
+}
+
+#home .home__main h1 {
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 7px;
+}
+
+#home .home__main .divide {
+  height: 2px;
+  background: red;
+  width: 35px;
+}
+
+#home .home__main p {
+  margin-top: 15px;
+  line-height: 1.7;
+}

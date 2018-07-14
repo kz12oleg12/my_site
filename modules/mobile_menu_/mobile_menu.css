@@ -1,0 +1,31 @@
+@media screen and (min-width: 1000px){
+	#menu #mobile_menu{
+		display: block !important;
+	}
+}
+@media screen and (max-width: 1000px){
+	#menu:before{
+		background: url("/images/bar.png") no-repeat scroll 9px 6px;
+		content: "";
+		float: right;
+		border: 1px solid #c2c2c2;
+		border-radius: 4px;
+		padding: 15px;
+		margin: 5px 20px;
+		position: relative;
+		cursor: pointer;
+	}
+/*	#menu:after{
+		content: "Меню";
+		font-size: 17px;
+		padding: 10px 20px;
+		position: absolute;
+	}*/
+	#menu #mobile_menu{
+		width: 100%;
+		display: none;
+	}
+	#menu #mobile_menu li{
+		float: none;
+	}
+}
